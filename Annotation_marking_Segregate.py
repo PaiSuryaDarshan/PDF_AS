@@ -47,7 +47,7 @@ def extract_annotations_by_color(pdf_path, color_lower_limit, color_upper_limit)
                     # print(e)
                     clipper_shape = annot.rect
 
-                ht = page.get_text("text", clip=clipper_shape)
+                ht = (f"Page {page_number + 1}: ") + page.get_text("text", clip=clipper_shape)
                 # Add to list of extracted content
                 extracted_content.append(ht)
             color_annot_for_test_run.append(color_annot)
@@ -65,7 +65,7 @@ def complete_function(pdf_path):
 
     # Green Highlight
     # & green_target = (0, 255, 0)  #! Light Green
-    green_lower_bound = (100, 100, 100)
+    green_lower_bound = (100, 120, 100)
     green_upper_bound = (200, 255, 200)
     green_extract = extract_annotations_by_color(pdf_path, green_lower_bound, green_upper_bound)
 
@@ -122,3 +122,11 @@ def complete_function(pdf_path):
         gray_extract,
         light_blue_extract
         )
+
+def Segregate(file, col):
+    f = open(file, 'w')
+    color_of_interest = col
+    for i in color_of_interest:
+        # fix buggy PDF formatting
+        f.write(i)
+    f.close()
