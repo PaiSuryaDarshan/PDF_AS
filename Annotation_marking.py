@@ -44,7 +44,7 @@ def extract_annotations_by_color(pdf_path, color_lower_limit, color_upper_limit)
                     quad = fitz.Quad(points)
                     clipper_shape = quad.rect
                 except Exception as e:
-                    print(e)
+                    # print(e)
                     clipper_shape = annot.rect
 
                 ht = page.get_text("text", clip=clipper_shape)
@@ -65,7 +65,7 @@ def complete_function(pdf_path):
 
     # Green Highlight
     # & green_target = (0, 255, 0)
-    green_lower_bound = (0, 204, 0)
+    green_lower_bound = (0, 100, 0)
     green_upper_bound = (0, 255, 51)
     green_extract = extract_annotations_by_color(pdf_path, green_lower_bound, green_upper_bound)
 
