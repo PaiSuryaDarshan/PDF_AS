@@ -1,0 +1,14 @@
+Page 1: g The noncovalent interactions that hold the gelator network together can be particularly responsive to certain external stimuli, while the macroscopic properties of the final gel can be altered by modification of the LMWGs at the molecular level; this responsive and tunable nature means that they have great potential for a variety of high-tech applications.46−48 
+
+Page 3: The reaction also produces mono- and trisubstituted products, which need to be removed to ensure optimal gelation of the disubstituted DBS and derivatives. While this process is 
+
+Page 4: i associated MGCs, students are advised to investigate at least two successful gelator−solvent systems per DBS gelator, with at least one polar and one nonpolar solvent system per gelator, to evaluate the conclusions made in Song and co-workers’ 2014 research: briefly, that nonpolar solvents lead to DBS gels where 
+
+Page 4: g and this allows samples to be prepared in advance. These spectroscopies require the gels to be clear; however, samples that are translucent or opaque are often observed, due to either impurities in the LMWG compound synthesized or poor sample preparation technique. In these cases, it is not possible to record a spectrum of any use. 55 58 60 
+
+Page 4: example of student-collected data); this suggests the formation of a ground-state dimer due to resonance of π-electrons between stacking aromatic groups. For DBS LMWGs in nonpolar 
+
+Page 4: g g g Students then collect fluorescence spectra using the wave- length of maximum absorption obtained from UV−vis as the excitation wavelength. Fluorescence spectroscopy is expected to 
+
+Page 4: p py p p polar solvents, while in nonpolar solvents, there is no redshift expected due to fewer π−π stacking interactions. 
+

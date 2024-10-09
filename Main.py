@@ -15,7 +15,7 @@ TITLE_Bla   = list_of_extracts[6]
 WHY_Gra     = list_of_extracts[7] 
 WHY_LBl     = list_of_extracts[8] 
 
-AM_S.Segregate(".\Extracts\Why.txt", WHAT_Yel)                    
+AM_S.Segregate(".\Extracts\Why.txt", WHY_Grn)                    
 
 # ----------------------------------------------------------------
 # REFERENCE FOR DEVELOPER
