@@ -15,7 +15,7 @@ TITLE_Bla = list_of_extracts[6]
 # WHY_Gra = list_of_extracts[7] 
 # WHY_LBl = list_of_extracts[8] 
 
-color_of_interest = WHAT_Yel
+color_of_interest = WHY_Grn
 
 for i in color_of_interest:
     print()

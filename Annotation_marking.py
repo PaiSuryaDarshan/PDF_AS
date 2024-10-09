@@ -64,9 +64,9 @@ def complete_function(pdf_path):
     yellow_extract = extract_annotations_by_color(pdf_path, yellow_lower_bound, yellow_upper_bound)
 
     # Green Highlight
-    # & green_target = (0, 255, 0)
-    green_lower_bound = (0, 100, 0)
-    green_upper_bound = (0, 255, 51)
+    # & green_target = (0, 255, 0)  #! Light Green
+    green_lower_bound = (100, 100, 100)
+    green_upper_bound = (200, 255, 200)
     green_extract = extract_annotations_by_color(pdf_path, green_lower_bound, green_upper_bound)
 
     # Blue Highlight
