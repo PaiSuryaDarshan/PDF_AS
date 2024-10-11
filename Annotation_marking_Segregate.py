@@ -46,8 +46,8 @@ def extract_annotations_by_color(pdf_path, color_lower_limit, color_upper_limit)
                 except Exception as e:
                     # print(e)
                     clipper_shape = annot.rect
-
-                ht = (f"Page {page_number + 1}:\n") + page.get_text("text", clip=clipper_shape)
+                    clipper_shape_adjusted = clipper_shape+(12,12,0,0)
+                ht = (f"Page {page_number + 1}: ") + page.get_textbox(clipper_shape_adjusted)
                 # Add to list of extracted content
                 extracted_content.append(ht)
             color_annot_for_test_run.append(color_annot)
@@ -87,11 +87,11 @@ def complete_function(pdf_path):
     pink_upper_bound = (255, 204, 255)
     pink_extract = extract_annotations_by_color(pdf_path, pink_lower_bound, pink_upper_bound)
 
-    # Orange Highlight
-    # & orange_target = (255, 165, 0)
-    orange_lower_bound = (204, 130, 0)
-    orange_upper_bound = (255, 195, 51)
-    orange_extract = extract_annotations_by_color(pdf_path, orange_lower_bound, orange_upper_bound)
+    # Red Highlight
+    # & red_target = (255, 25, 25)
+    red_lower_bound = (0, 20, 20)
+    red_upper_bound = (255, 50, 50)
+    red_extract = extract_annotations_by_color(pdf_path, red_lower_bound, red_upper_bound)
 
     # Black Highlight
     # & black_target = (0, 0, 0)
@@ -117,7 +117,7 @@ def complete_function(pdf_path):
         blue_extract,
         purple_extract,
         pink_extract,
-        orange_extract,
+        red_extract,
         black_extract,
         gray_extract,
         light_blue_extract
@@ -133,7 +133,7 @@ def Segregate(file, col):
     for i in color_of_interest:
         
         # fix buggy PDF formatting (and add spaces between points)
-        text_to_add = i.replace("\n", " ") + "\n\n" 
+        text_to_add = i.replace("\n", " ") + "\n" 
         # convert str to bytes (fixes UniEncodeError(s))
         f.write(text_to_add.encode('utf8'))
     f.close()
