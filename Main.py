@@ -8,16 +8,16 @@ list_of_extracts = AM_S.complete_function(pdf_path)
 WHAT_Yel    = list_of_extracts[0] 
 WHY_Grn     = list_of_extracts[1] 
 EXPECT_Blu  = list_of_extracts[2] 
-WHY_Pur     = list_of_extracts[3] 
-WHY_Pin     = list_of_extracts[4] 
-How_red     = list_of_extracts[5] 
+# UNKNOWN_FUNC_Pur     = list_of_extracts[3] 
+# UNKNOWN_FUNC_Pin     = list_of_extracts[4] 
+How_red     = list_of_extracts[5]   
 TITLE_Bla   = list_of_extracts[6] 
-WHY_Gra     = list_of_extracts[7] 
-WHY_LBl     = list_of_extracts[8] 
+# UNKNOWN_FUNC_Gra     = list_of_extracts[7] 
+# UNKNOWN_FUNC_LBl     = list_of_extracts[8] 
 
-# AM_S.Segregate(".\Extracts\What.txt", WHAT_Yel)                    
-# AM_S.Segregate(".\Extracts\Why.txt", WHY_Grn)                    
 AM_S.Segregate(".\Extracts\_0_TITLE.txt", TITLE_Bla)                    
+AM_S.Segregate(".\Extracts\What.txt", WHAT_Yel)                    
+AM_S.Segregate(".\Extracts\Why.txt", WHY_Grn)                    
 AM_S.Segregate(".\Extracts\How.txt", How_red)                    
 
 # ----------------------------------------------------------------
