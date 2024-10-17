@@ -46,8 +46,7 @@ def extract_annotations_by_color(pdf_path, color_lower_limit, color_upper_limit)
                 except Exception as e:
                     # print(e)
                     clipper_shape = annot.rect
-                    clipper_shape_adjusted = clipper_shape+(12,12,0,0)
-                ht = (f"Page {page_number + 1}: ") + page.get_textbox(clipper_shape_adjusted)
+                ht = (f"Page {page_number + 1}: ") + page.get_textbox(clipper_shape)
                 # Add to list of extracted content
                 extracted_content.append(ht)
             color_annot_for_test_run.append(color_annot)
@@ -93,6 +92,12 @@ def complete_function(pdf_path):
     red_upper_bound = (255, 50, 50)
     red_extract = extract_annotations_by_color(pdf_path, red_lower_bound, red_upper_bound)
 
+    # orange Highlight
+    # & orange_target = (255, 25, 25)
+    orange_lower_bound = (0, 20, 20)
+    orange_upper_bound = (255, 50, 50)
+    orange_extract = extract_annotations_by_color(pdf_path, orange_lower_bound, orange_upper_bound)
+
     # Black Highlight
     # & black_target = (0, 0, 0)
     black_lower_bound = (0, 0, 0)
@@ -118,6 +123,7 @@ def complete_function(pdf_path):
         purple_extract,
         pink_extract,
         red_extract,
+        orange_extract,
         black_extract,
         gray_extract,
         light_blue_extract
