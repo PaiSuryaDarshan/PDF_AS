@@ -57,30 +57,30 @@ def extract_annotations_by_color(pdf_path, color_lower_limit, color_upper_limit)
 
 def complete_function(pdf_path):
     # Yellow Highlight
-    # & yellow_target = (255, 255, 0)
+    # & yellow_target = (255,209,0)
     yellow_lower_bound = (204, 204, 0)
     yellow_upper_bound = (255, 255, 51)
     yellow_extract = extract_annotations_by_color(pdf_path, yellow_lower_bound, yellow_upper_bound)
 
     # Green Highlight
-    # & green_target = (0, 255, 0)  #! Light Green
-    green_lower_bound = (100, 120, 100)
+    # & green_target = (106,217,40) 
+    green_lower_bound = (100, 120, 0)
     green_upper_bound = (200, 255, 200)
     green_extract = extract_annotations_by_color(pdf_path, green_lower_bound, green_upper_bound)
 
     # Blue Highlight
-    # & blue_target = (0, 0, 255)
+    # & blue_target = (0,0,255)
     blue_lower_bound = (0, 0, 204)
     blue_upper_bound = (51, 51, 255)
     blue_extract = extract_annotations_by_color(pdf_path, blue_lower_bound, blue_upper_bound)
 
-    # Purple Highlight
-    # & purple_target = (128, 0, 128)
+    # Purple Highlight 
+    # & purple_target = (163,48,134)
     purple_lower_bound = (102, 0, 102)
-    purple_upper_bound = (153, 51, 153)
+    purple_upper_bound = (193, 51, 153)
     purple_extract = extract_annotations_by_color(pdf_path, purple_lower_bound, purple_upper_bound)
 
-    # Pink Highlight
+    #! Pink Highlight
     # & pink_target = (255, 192, 203)
     pink_lower_bound = (204, 153, 178)
     pink_upper_bound = (255, 204, 255)
@@ -93,9 +93,9 @@ def complete_function(pdf_path):
     red_extract = extract_annotations_by_color(pdf_path, red_lower_bound, red_upper_bound)
 
     # orange Highlight
-    # & orange_target = (255, 25, 25)
-    orange_lower_bound = (0, 20, 20)
-    orange_upper_bound = (255, 50, 50)
+    # & orange_target = (255,112,2)
+    orange_lower_bound = (0, 90, 0)
+    orange_upper_bound = (255, 130, 10)
     orange_extract = extract_annotations_by_color(pdf_path, orange_lower_bound, orange_upper_bound)
 
     # Black Highlight
