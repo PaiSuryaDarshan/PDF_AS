@@ -1,6 +1,6 @@
 import Annotation_marking_Segregate as AM_S
 
-pdf_path = "D:\iCloudDrive\Desktop\Academics\Year_3\Lab\SC Papers\(Dan Cornwell-Groves) GOD_Paper_1.pdf"
+pdf_path = "D:\iCloudDrive\Desktop\Academics\Year_3\Lab\SC Papers\(Onder_Peckan) Effect of temperature on Gelation properties.pdf"
 # pdf_path = "C:/Users/surya/Downloads/p1_(Song_Jian).pdf"
 
 list_of_extracts = AM_S.complete_function(pdf_path)
