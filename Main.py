@@ -2,11 +2,13 @@ import sys
 import os
 import Annotation_marking_Segregate as AM_S
 
+# Verify OS
 if sys.platform == 'darwin':
     LIT_REV_DIR = "/Users/pai.suryadarshan/Desktop/Academics/Year_3/(3000 word) Lit. Rev"
 if sys.platform == 'win32':
     LIT_REV_DIR = "D:\iCloudDrive\Desktop\Academics\\Desktop\Academics\Year_3\(3000 word) Lit. Rev"
 
+# Alphabetically Sort list and provide prompt to select file of interest
 SORTED_DIR = sorted(os.listdir(LIT_REV_DIR))
 
 prompt = ""
@@ -18,8 +20,8 @@ paper_number = int(input(prompt).strip())
 papername = SORTED_DIR[paper_number]
 
 pdf_path = LIT_REV_DIR + '/' + papername
-print(pdf_path)
 
+# Make Extractions based on color
 list_of_extracts = AM_S.complete_function(pdf_path)
 
 MOTIVATION_Yel  = list_of_extracts[0] 
@@ -58,3 +60,11 @@ if sys.platform == 'win32':
 
 # list_of_extracts is in the order
 # yellow, green, blue, purple, pink, red, orange, black, gray, light_blue
+
+# TITLE          = Black
+# MOTIVATION     = Yellow
+# METHODS        = Green
+# CONTEXT        = Blu
+# RESULTS        = Pur
+# INTERPRETATION = Ora
+# FUTURE         = red
