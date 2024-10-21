@@ -6,7 +6,7 @@ import Annotation_marking_Segregate as AM_S
 if sys.platform == 'darwin':
     LIT_REV_DIR = "/Users/pai.suryadarshan/Desktop/Academics/Year_3/(3000 word) Lit. Rev"
 if sys.platform == 'win32':
-    LIT_REV_DIR = "D:\iCloudDrive\Desktop\Academics\\Desktop\Academics\Year_3\(3000 word) Lit. Rev"
+    LIT_REV_DIR = "D:/iCloudDrive/Desktop/Academics/Year_3/(3000 word) Lit. Rev"
 
 # Alphabetically Sort list and provide prompt to select file of interest
 SORTED_DIR = sorted(os.listdir(LIT_REV_DIR))
