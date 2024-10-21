@@ -1,1 +1,0 @@
-Page 5: where the Flory–Stockmayer theory (so-called the classical or mean-field theory) gives β = γ = 1, independent of the dimensionality d, while the percolation studies based on computer simulations give γ and β around 1.7 and 0.43 in three dimension.44–47 These two universality classes for gelation problem are  
