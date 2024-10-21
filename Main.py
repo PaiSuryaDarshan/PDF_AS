@@ -9,15 +9,16 @@ if sys.platform == 'win32':
 
 SORTED_DIR = sorted(os.listdir(LIT_REV_DIR))
 
+prompt = ""
 for index, filename in enumerate(SORTED_DIR):
     options = str(index) + " ====> " + filename
-    print(options)
+    prompt += options + "\n"
 
-print(os.listdir(LIT_REV_DIR))
+paper_number = int(input(prompt).strip())
+papername = SORTED_DIR[paper_number]
 
-# papername = ""
-
-# pdf_path = LIT_REV_DIR + '\ '.strip() + papername
+pdf_path = LIT_REV_DIR + '/' + papername
+print(pdf_path)
 
 # list_of_extracts = AM_S.complete_function(pdf_path)
 
